@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+VIC+WA+NT+Beginner&display=swap');
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #82589F;
+}
+.mian-login-cont{
+    height: 30rem;
+    width: 50rem;
+    display: block;
+    position: absolute;
+    top: calc((100vh / 2) - 15rem);
+    left:calc(100vw / 2 - 25rem);  
+    display: flex; 
+}
+.left-side-cont{
+    border: 1px solid black;
+    border-right: none;
+    width: calc(100% / 2);
+    height: 100%;
+    background: linear-gradient(25deg ,#5758BB, purple , #1B1464);
+    border-bottom-left-radius: 8px;
+    border-top-left-radius: 8px;
+    position: relative;
+}
+.right-side-cont{
+    border: 1px solid black;
+    width: calc(100% / 2);
+    background-color: #f5f6fa;
+    height: 100%;
+    border-left: none;
+    border-bottom-right-radius: 8px;
+    border-top-right-radius: 8px;
+    position: relative;
+}
+.app-name-logo{
+    padding: 15px 15px;
+    color: #f5f6fa;
+    font-size: 15px;
+    font-family: 'Edu VIC WA NT Beginner', cursive;
+    font-weight: 600;
+    font-style: italic;
+}
+.new-user-btn{
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+    padding: 8px 40px;
+    border-radius: 20px;
+    background-color: #0c2461;
+    color: azure;
+    font-size: 16px;
+    cursor: pointer;
+}
+.right-side-cont h2{
+    padding-top:  25px;
+    padding-left: 45px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    letter-spacing: .5px;
+}
+.details-of-user{
+    /* background-color: red; */
+    height: 50%;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 40px;
+    margin-top: 50px;   
+}
+.Alredy-sign-in-user-btn{
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    padding: 8px 40px;
+    border-radius: 20px;
+    background-color: #182C61;
+    color: #a5b1c2;
+    font-size: 16px;
+    cursor: pointer;
+    display: none;
+}
+.details-of-user input{
+    outline: none;
+    border-bottom: 2px solid red;
+    border-left: none;
+    border-top: none;
+    border-right: none;
+    width: 100%;
+    background: transparent;
+    padding: 15px 15px;
+    margin-top: 30px;
+}
+.details-of-user button{
+    margin-top: 30px;
+    width: 100%;
+    background: linear-gradient(15deg , lightblue ,lightpink , purple);
+    color: black;
+    font-size: 12px;
+    letter-spacing: 2px;
+    cursor: pointer;
+    padding: 10px 0px;
+    text-transform: uppercase;
+    border-radius: 4px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.extra{
+    width: 100%;
+    display: none;
+}
+
+/* This line of code for managing a media query for only mobile having width 360px only */
+@media screen  and ( max-width : 360px) {
+    .mian-login-cont{
+        height: 640px;
+        width: 335px;
+        display: block;
+        position: absolute;
+        top: calc((100vh / 2) - 320px);
+        left:calc(100vw / 2 - 167.5px);  
+        display: flex; 
+        flex-direction: column;
+    }
+    .left-side-cont , .right-side-cont{
+        width: 100%;
+        border-radius: 0px;
+    }
+    .left-side-cont{
+        border-top-left-radius: 8px ;
+        border-top-right-radius: 8px ;
+    }
+    .right-side-cont{
+        border-bottom-left-radius: 8px ;
+        border-bottom-right-radius: 8px ;
+    }
+}
